@@ -1,0 +1,204 @@
+/* Overall container styling */
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Stepper container styling */
+.stepper-container {
+  background: #e9ecef;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Step label styling */
+.MuiStepLabel-root {
+  font-size: 1rem;
+  color: #495057;
+}
+
+.MuiStepLabel-label {
+  font-weight: 500;
+  color: #495057;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.MuiStepLabel-label.Mui-active {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.MuiStepLabel-label.Mui-completed {
+  color: #28a745;
+}
+
+/* Input fields and controls styling */
+.MuiTextField-root,
+.MuiFormControl-root {
+  margin-bottom: 20px;
+}
+
+.MuiTextField-root input,
+.MuiSelect-root {
+  border-radius: 12px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkbox styling */
+.MuiCheckbox-root {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.MuiCheckbox-root.Mui-checked {
+  color: #007bff;
+}
+
+/* Button styling */
+.MuiButton-containedPrimary {
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 91, 187, 0.3);
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.button-container .MuiButton-root {
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* Summary and total cost styling */
+.typography-summary {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.typography-cost {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #28a745;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Dark mode styling */
+.dark-mode {
+  background-color: #111920;
+  color: #ffffff;
+}
+
+.dark-mode .form-container {
+  background-color: #111920;
+  color: #ffffff;
+}
+
+.dark-mode .stepper-container .MuiStepLabel-label,
+.dark-mode .stepper-container .MuiStepIcon-root {
+  color: #000000;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea,
+.dark-mode button,
+.dark-mode .MuiFormControl-root .MuiInputLabel-root,
+.dark-mode .MuiFormControl-root .MuiInputBase-root {
+  background-color: #222;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+
+.dark-mode .MuiFormControl-root .MuiSelect-select {
+  background-color: #222;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.dark-mode .MuiCheckbox-root .MuiSvgIcon-root,
+.dark-mode .MuiRadio-root .MuiSvgIcon-root,
+.dark-mode .MuiSwitch-root .MuiSvgIcon-root {
+  color: #ffffff;
+}
+
+.dark-mode .MuiTypography-h5,
+.dark-mode .MuiTypography-body1 {
+  color: #ffffff;
+}
+
+.dark-mode .MuiButton-root {
+  background-color: #111920;
+  color: #ffffff;
+  border-color: lightblue;
+}
+
+.dark-mode .button-container .MuiButton-root {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.dark-mode .button-container .MuiButton-outlined {
+  border: 2px solid lightblue;
+  color: lightblue;
+}
+
+.dark-mode .toggle {
+  color: #ffffff;
+}
+
+.dark-mode .toggle-dark {
+  color: #f39c12;
+}
+body.dark-mode {
+  background-color: #111928;
+  color: #ffffff;
+}
+.form-container.dark-mode {
+  background-color: #1f2937;
+}

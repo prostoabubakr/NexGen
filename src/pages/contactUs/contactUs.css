@@ -1,0 +1,151 @@
+/* Dark mode styling */
+.dark-mode {
+    background-color: #111920;
+    color: #ffffff;
+  }
+  
+  .dark-mode input,
+  .dark-mode button {
+    background-color: #111920;
+    color: #ffffff;
+    border: 1px solid #444444;
+  }
+  .hed{
+    background-color:rgba(134, 134, 134, 0.7);
+  }
+  
+  .dark-mode .hed {
+    border-bottom-color: #ffffff;
+  }
+  
+  .dark-mode h1, 
+  .dark-mode h2, 
+  .dark-mode p {
+    color: #ffffff;
+  }
+  
+  .dark-mode .contact-info {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #444444;
+  }
+  
+  .dark-mode .toggle {
+    color: #ffffff;
+  }
+  .con{
+    font-size: 80px;
+  }
+  
+  .dark-mode .toggle-dark {
+    color: #f39c12;
+  }
+  
+  @media (max-width: 1024px) {
+    .con {
+      font-size: 70px;
+    }
+  
+    .mes {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ourNum {
+      width: 100%;
+      margin-top: 30px;
+    }
+  
+    input,
+    button {
+      width: 30%;
+    }
+  
+    .hed {
+      font-size: 16px;
+    }
+  
+    .con {
+      font-size: 70px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hed {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .con {
+      font-size: 60px;
+      text-align: center;
+    }
+  
+    .mes {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  
+    input,
+    button {
+      width: 95%;
+    }
+  
+    .ourNum {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .con {
+      font-size: 50px;
+    }
+  
+    .hed {
+      font-size: 12px;
+    }
+  
+    .mes {
+      width: 100%;
+    }
+  
+    input,
+    button {
+      width: 95%;
+    }
+  
+    .ourNum {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .hed {
+      font-size: 12px;
+      text-align: center;
+    }
+  
+    .con {
+      font-size: 45px;
+      text-align: center;
+    }
+  
+    .mes {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    input,
+    button {
+      width: 95%;
+    }
+  
+    .ourNum {
+      font-size: 12px;
+      text-align: center;
+      padding: 10px;
+    }
+  }

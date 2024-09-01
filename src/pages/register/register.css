@@ -1,0 +1,164 @@
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.logo-image {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  z-index: 10;
+  left: -25px;
+  top: -50px;
+}
+
+.register-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem; /* Уменьшено с 3rem */
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 350px; /* Уменьшено с 400px */
+  max-width: 100%;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+  z-index: 1;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.login-title {
+  font-size: 2rem; /* Уменьшено с 2.5rem */
+  margin-bottom: 1.5rem; /* Уменьшено с 2rem */
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.login-title::after {
+  content: '';
+  display: block;
+  width: 50px; /* Уменьшено с 60px */
+  height: 3px; /* Уменьшено с 4px */
+  background: #00c6ff;
+  margin: 0.5rem auto 0;
+}
+
+.login-form .form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.9rem; /* Уменьшено с 1rem */
+}
+
+.form-field {
+  width: 100%;
+    padding: 0.6rem; /* Уменьшено с 0.75rem */
+    border-radius: 5px; /* Уменьшено с 6px */
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 0.9rem; /* Уменьшено с 1rem */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.form-field:focus {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  box-shadow: 0 0 5px #00c6ff, 0 0 10px #00c6ff;
+}
+
+.submit-button {
+  background-color: #00c6ff;
+  color: white;
+  padding: 0.6rem 1.5rem; /* Уменьшено с 0.75rem 2rem */
+  border: none;
+  border-radius: 40px; /* Уменьшено с 50px */
+  font-size: 0.9rem; /* Уменьшено с 1rem */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 198, 255, 0.4);
+}
+
+.submit-button:hover {
+  background-color: #007bff;
+  transform: translateY(-5px);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+h3 {
+  margin-top: 1.2rem; /* Уменьшено с 1.5rem */
+  font-size: 0.9rem; /* Уменьшено с 1rem */
+  color: #00c6ff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+h3:hover {
+  color: #007bff;
+}
+
+h3:active {
+  color: #0056b3;
+}
+
+/* Background floating elements for added effect */
+.register-container::before, .register-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.6;
+  animation: float 6s ease-in-out infinite;
+  z-index: -1;
+}
+
+.register-container::before {
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  left: -50px;
+}
+
+.register-container::after {
+  width: 300px;
+  height: 300px;
+  bottom: -70px;
+  right: -70px;
+  animation-duration: 8s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
